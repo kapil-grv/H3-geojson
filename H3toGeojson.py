@@ -23,7 +23,7 @@ from ctypes import (
     POINTER,
 )
 
-_dirname = os.path.dirname('/home/kapil/p3/Files/h3/h3-py/h3/')
+_dirname = os.path.dirname('path')#h3 installation directory containing the h3 core files
 libh3_path = ('{}/{}'.format(_dirname, 'out/libh3.1.dylib')
               if platform.system() == 'Darwin' else (
               '{}/{}'.format(_dirname, 'out/h3.dll') if platform.system() == 'Windows' else
@@ -804,8 +804,11 @@ if __name__ == "__main__":
             print("H3 generation done for :",str(i[prop1]))
 
     with open(output_file, 'a') as fo:
-        fo.write(str('{"geometry": {"coordinates": [[[]]], "type": "Polygon"}, "type": "Feature"} ] }'))
+        fo.write(str('{"geometry": {"coordinates": [[[]]], "type": "Polygon"}, "type": "Feature"} ] }'))#Just an empty value row to make the file readable by visualization softwares
         fo.close()
 
     print('Process Completed')
 
+
+   #Usage:
+#$python H3toGeojson.py input_csv_txt_file output_geojson_file
