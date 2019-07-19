@@ -1,5 +1,6 @@
 # H3
 H3 Geospatial Indexing System by UBER
+Installation of H3 library and other details of H3 could be found in this Git Repo - https://github.com/uber/h3
 
 
 This file lets you convert a list of H3 hashes to a Geojson File.
