@@ -19,7 +19,7 @@ from ctypes import (
     POINTER,
 )
 
-_dirname = os.path.dirname('/home/kapil/p3/Files/h3/h3-py/h3/')
+_dirname = os.path.dirname('/home/kapil/p3/Files/h3/h3-py/h3/')#path of out directory with required lib files
 libh3_path = ('{}/{}'.format(_dirname, 'out/libh3.1.dylib')
               if platform.system() == 'Darwin' else (
               '{}/{}'.format(_dirname, 'out/h3.dll') if platform.system() == 'Windows' else
